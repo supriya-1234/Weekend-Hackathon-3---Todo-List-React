@@ -54,17 +54,19 @@ function App() {
         {todoList.length === 0 ? (
           "No Task"
         ) : (
-          <ul>
+          <>
             {todoList.map((task, id) => {
               return (
+                <div>
                 <li key={id} className="list">
                   {task.text}
                   <button onClick={() => handleEdit(id)}>Edit</button>
                   <button onClick={() => handleDelete(id)}>Delete</button>
                 </li>
+                </div>
               );
             })}
-          </ul>
+          </>
         )}
         {showEditBox ? (
           <div>

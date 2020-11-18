@@ -1,16 +1,24 @@
+body {
+  background-color: #333333;
+}
 h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  color: #27aedb;
+  text-align: center;
 }
 
-.bg-pink{
-	background-color:pink;
+button {
+  color: #27aedb;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+.App {
+  background-color: #27aedb;
+  height: 80vh;
+  width: 70vh;
+  margin: 40px auto;
 }
