@@ -61,8 +61,12 @@ function App() {
                   <li key={id} className="list">
                     {task.text}
                   </li>
-                  <button onClick={() => handleEdit(id)}>Edit</button>
-                  <button onClick={() => handleDelete(id)}>Delete</button>
+                  <button className="edit" onClick={() => handleEdit(id)}>
+                    Edit
+                  </button>
+                  <button className="delete" onClick={() => handleDelete(id)}>
+                    Delete
+                  </button>
                 </div>
               );
             })}
@@ -70,8 +74,16 @@ function App() {
         )}
         {showEditBox ? (
           <div>
-            <textarea value={editBoxText} onChange={handleEditBox} />
-            <button disabled={!editBoxText} onClick={() => saveEdit()}>
+            <textarea
+              className="editTask"
+              value={editBoxText}
+              onChange={handleEditBox}
+            />
+            <button
+              className="saveTask"
+              disabled={!editBoxText}
+              onClick={() => saveEdit()}
+            >
               Save
             </button>
           </div>
