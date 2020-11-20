@@ -47,7 +47,7 @@ function App() {
     <>
       <div id="main">
         <textarea id="task" value={items} onChange={handleChange} />
-        <button disabled={!items} onClick={handleAdd}>
+        <button id="btn" disabled={!items} onClick={handleAdd}>
           Add
         </button>
         <hr />
